@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="img/geo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/geo.png" alt="Logo" class="logo" id="logo">
+            <div class="dropdown-menu" id="dropdown-menu">
+                <ul>
+                    <li><a href="graphic/index.html">Gráfico de Desmatamento</a></li>
+                    <li><a href="https://terrabrasilis.dpi.inpe.br/app/dashboard/fires/biomes/aggregated/#">Análise</a>
+                    </li>
+                    <li><a href="https://terrabrasilis.dpi.inpe.br/ams/">Sala de Situação</a></li>
+                    <li><a
+                            href="https://ipam.org.br/cartilhas-ipam/foconofogo/#:~:text=O%20fogo%20está%20intimamente%20ligado,no%20entanto%2C%20essa%20realidade%20mudou.">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="chart-container">
+            <h2>Estatísticas e Tendências do Desmatamento no Brasil</h2>
+            <p>
+                Explore os dados detalhados sobre os focos de incêndio e as taxas de desmatamento no Brasil.
+                Este site apresenta gráficos interativos que mostram a distribuição geográfica e temporal dos incêndios,
+                permitindo identificar as regiões mais afetadas e as mudanças ao longo dos anos.
+            </p>
+            <p>
+                Além disso, você encontrará links para ferramentas externas confiáveis, como a plataforma TerraBrasilis,
+                que oferece análises adicionais e informações em tempo real sobre os biomas brasileiros.
+                Nosso objetivo é fornecer uma visão abrangente para ajudar na conscientização e na tomada de decisões.
+            </p>
+            <canvas id="chart1" width="400" height="200"></canvas>
+            <p class="chart-caption">Gráfico 1: Tendência anual de focos de incêndio nos Biomas Brasileiros.</p>
+            <p class="chart-source">
+                Fonte: <a href="https://www.globalforestwatch.org/dashboards/country/BRA/?category=fires"
+                    target="_blank">Global Forest Watch</a>
+            </p>
+            <canvas id="chart2" width="400" height="200"></canvas>
+            <p class="chart-caption">Gráfico 2: Comparativo de desmatamento por estado nos últimos 10 anos.</p>
+            <p class="chart-source">
+                Fonte: <a href="https://www.statista.com/topics/11729/deforestation-in-brazil/"
+                    target="_blank">Statista</a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="github-links">
+            <a href="https://github.com/graxyzr">
+                <i class="fa-brands fa-github"></i>
+                Greice Pereira
+            </a>
+            <a href="https://github.com/xphzin-dzn">
+                <i class="fa-brands fa-github"></i>
+                Pedro Henrique
+            </a>
+            <a href="https://github.com/Prietsch">
+                <i class="fa-brands fa-github"></i>
+                Rafaela Prietsch
+            </a>
+            <a href="https://github.com/MauroRosa">
+                <i class="fa-brands fa-github"></i>
+                Mauro Rosa
+            </a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
